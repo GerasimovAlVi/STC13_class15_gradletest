@@ -1,15 +1,12 @@
 language: java
 
-before_install: ./gradlew wrapper
-
-install: true
-
 jdk:
   - oraclejdk8
 
-script:
-  - ./gradlew assemble
-  - ./gradlew check
+before_install:
+ - chmod +x gradlew
+
+install: true
 
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
@@ -24,3 +21,7 @@ branches:
   only:
     - master
     - develop
+
+script:
+  - ./gradlew assemble
+  - ./gradlew check
