@@ -27,3 +27,10 @@ cache:
 script:
   - ./gradlew assemble
   - ./gradlew check
+  - sonar-scanner
+
+addons:
+  sonarcloud:
+    organization: "gerasimovalvi-github"
+    token:
+      secure: a6d8603ddaa4ea00c05d35b25e847db28503eb28
