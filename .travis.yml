@@ -33,5 +33,6 @@ addons:
 script:
   - ./gradlew assemble
   - ./gradlew check
-  - ./gradlew sonarqube
+  - sonar-scanner
+  - rm -rf .scannerwork
 
