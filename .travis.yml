@@ -33,5 +33,5 @@ addons:
 script:
   - ./gradlew assemble
   - ./gradlew check
-  - sonarqube
+  - ./gradlew sonarqube
 
