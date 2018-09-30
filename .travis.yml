@@ -27,7 +27,7 @@ cache:
 script:
   - ./gradlew assemble
   - ./gradlew check
-  - sonarqube
+  - sonar-scanner
 
 addons:
   sonarcloud:
