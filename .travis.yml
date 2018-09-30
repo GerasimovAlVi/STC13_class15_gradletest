@@ -26,7 +26,7 @@ cache:
 
 addons:
   sonarcloud:
-    organization: $SONARCLOUD_ORGANIZATION
+    organization: "gerasimovalvi-github"
     token:
       secure: $SONARCLOUD_TOKEN
 
